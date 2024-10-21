@@ -1,0 +1,268 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background-color: white;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    height:100px;
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-img {
+    width: 190px;
+    height: 60px;
+
+  }
+  
+  .logo-text {
+    margin-left: 10px;
+  }
+  
+  .logo-text h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .logo-text p {
+    font-size: 0.9rem;
+    color: gray;
+  }
+  
+  nav {
+    display: flex;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    margin-left: 30px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .nav-links a:hover {
+    color: #b29c45; /* Same as the logo background */
+  }
+  
+  /* Optional for aesthetic spacing */
+  .container {
+    padding: 0 15px;
+  }
+
+  /* Hero Section */
+.hero {
+    background: url('https://cdn.pixabay.com/photo/2021/01/21/21/48/mountain-ranges-5938639_1280.jpg') no-repeat center center/cover;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+  
+  .hero-content h2 {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .hero-content p {
+    font-size: 1rem;
+    max-width: 600px;
+    line-height: 1.5;
+  }
+  
+  /* Wine Tasting Experience Section */
+.wine-tasting {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px;
+    background-color: #f9f9f9;
+  }
+  
+  .wine-content {
+    max-width: 50%;
+  }
+  
+  .wine-content h4 {
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #a08924;
+    margin-bottom: 10px;
+  }
+  
+  .wine-content h2 {
+    font-size: 2.5rem;
+    color: #b29422;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .wine-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #4d4d4d;
+  }
+  
+  .wine-description {
+    max-width: 40%;
+  }
+  
+  .wine-description p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #4d4d4d;
+  }
+  .right-text{
+    justify-items: first baseline;
+  }
+  
+  /* Wine Hero Section */
+.wine-hero {
+    position: relative;
+    background-image: url('https://www.travelandleisure.com/thmb/2bFfOZ5or2vQypG0nh9LTWgrMBQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/camp-bay-beach-cape-town-south-africa-WRLDBEACH0421-d70da875e2e04870a23271a06d02035c.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    height: 50vh; /* Adjust height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  
+  .wine-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* Dark overlay */
+    z-index: 1;
+  }
+  
+  .wine-hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+  }
+  
+  .wine-hero-content p {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  
+  .wine-hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .upcoming-events-btn {
+    padding: 10px 20px;
+    background-color: #b29422;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .upcoming-events-btn:hover {
+    background-color: #a08924;
+  }
+
+  /* About Section */
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px;
+    background-color: white;
+  }
+  
+  .about-left {
+    flex: 1;
+    max-width: 50%;
+    margin-right: 50px;
+  }
+  
+  .about-left h5 {
+    color: #b29422; /* Highlight color */
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  
+  .about-left h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+  
+  .about-right {
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  .about-right p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555; /* Text color */
+    margin-bottom: 20px;
+  }
+  
+  
+  
